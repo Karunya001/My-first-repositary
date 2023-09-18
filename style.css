@@ -54,7 +54,21 @@ body{
 .clear-btn{
     width: 100%;
 }
-.button-group, .btn:hover, .clear-btn:hover{
-    background-color: transparent;
+.button-group .btn:hover, 
+.clear-btn:hover{
+    background-color: white;
     color:black;
+}
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+        width: 60%;
+        height: 100vh;
+    }
+    .responsive-sub-container{
+        margin: 2em 0 3em;
+    }
+    .responsive-clear-btn{
+        margin-bottom:2.5em;
+    }
 }
